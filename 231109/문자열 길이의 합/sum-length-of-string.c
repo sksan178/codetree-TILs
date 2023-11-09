@@ -23,10 +23,8 @@ int main() {
     }
 
     for(i = 0; i < n; i++){
-        for(j = 0; j < 101; j++){
-            if(s[i][j] == c){
-                count++;
-            }
+        if(s[i][0] == c){
+            count++;
         }
     }
 
