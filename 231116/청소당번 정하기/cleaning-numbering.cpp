@@ -6,16 +6,21 @@ int main() {
     int n;
     cin >> n;
 
-    for(int i = 1; i < n; i++){
+    for(int i = 0; i <= n; i++){
+        if(i == 0){
+            continue;
+        }
         if(i % 2 == 0){
             if((i % 2 ==0) && (i % 3 == 0) && (i % 12 == 0)){
                 c++;
             }else if((i % 2 == 0) && (i % 3 == 0)){
                 b++;
-            }else{
+            }
+            else{
                 a++;
             }
-        }else if(i % 3 == 0){
+        }
+        else if(i % 3 == 0){
             if((i % 3 == 0) && (i % 12 == 0)){
                 c++;
             }else{
