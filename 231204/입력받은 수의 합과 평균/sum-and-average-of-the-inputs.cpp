@@ -20,5 +20,6 @@ int main() {
     cout << fixed;
     cout << s << " " << avg;
 
+    delete[] m;
     return 0;
 }
