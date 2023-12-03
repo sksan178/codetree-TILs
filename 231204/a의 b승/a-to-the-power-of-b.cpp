@@ -4,16 +4,10 @@ using namespace std;
 int main() {
     int a, b;
     cin >> a >> b;
-    int prod = a;
+    int prod = 1;
 
-    for(int i = 1; i < b; i++){
-        if(b == 0){
-            prod *= 0;
-        }else{
-            int n = a;
-            prod *= a;
-        }
-        
+    for(int i = 1; i <= b; i++){
+        prod *= a;
     }
 
     cout << prod;
