@@ -1,11 +1,16 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main() {
     int a, b;
     cin >> a >> b;
-    
-    cout << pow(a, b);
+    int prod = a;
+
+    for(int i = 1; i < b; i++){
+        int n = a;
+        prod *= a;
+    }
+
+    cout << prod;
     return 0;
 }
