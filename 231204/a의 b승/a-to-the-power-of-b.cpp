@@ -7,8 +7,13 @@ int main() {
     int prod = a;
 
     for(int i = 1; i < b; i++){
-        int n = a;
-        prod *= a;
+        if(b == 0){
+            prod *= 0;
+        }else{
+            int n = a;
+            prod *= a;
+        }
+        
     }
 
     cout << prod;
