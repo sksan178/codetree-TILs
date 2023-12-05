@@ -10,6 +10,9 @@ int main() {
     for (int i = 1; n >= 1; i++) {
         n /= i;
         count = i;
+
+        if(n <= 1)
+            break;
     }
 
     cout << count << endl;
