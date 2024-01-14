@@ -8,16 +8,18 @@ int main() {
     int m[10];
     for(int i = 0; i < 10; i++){
         m[i] = n * (i+1);
-
-        if(m[i] % 5 == 0){
-            count++;
-        }
     }
 
     for(int i = 0; i < 10; i++){
-        if(count <= 2){
+        if(m[i] % 5 == 0){
+            count++;
+        }
+
+        if(count < 2){
             cout << m[i] << " ";
-        }else{
+        }
+        else{
+            cout << m[i] << " ";
             break;
         }
     }
